@@ -44,7 +44,7 @@ class Assessment:
         if self.type not in ["multiple-choice", "technical", "presentation"]:
             raise ValueError("Not a valid assessment type")
         if self.score < 0:
-            raise ValueError("Score cannot be below 100")
+            raise ValueError("Score cannot be below 0")
         if self.score > 100:
             raise ValueError("Score cannot be above 100")
 
