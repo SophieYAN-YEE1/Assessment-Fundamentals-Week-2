@@ -1,10 +1,13 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.14.6, pytest-9.1.1, pluggy-1.6.0
 rootdir: /home/runner/work/Assessment-Fundamentals-Week-2/Assessment-Fundamentals-Week-2
-collected 16 items / 1 error
+collected 24 items
 
-!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.13s ===============================
+Level-1/test_one_task.py .........                                       [ 37%]
+Level-2/test_two_task.py .......                                         [ 66%]
+Level-3/test_three_task.py ........                                      [100%]
+
+============================== 24 passed in 0.04s ==============================
 ************* Module task_one
 Level-1/task_one.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 Level-1/task_one.py:38:34: W0622: Redefining built-in 'type' (redefined-builtin)
@@ -22,17 +25,29 @@ Level-2/task_two.py:75:0: R0903: Too few public methods (1/2) (too-few-public-me
 Level-2/task_two.py:90:48: W0622: Redefining built-in 'type' (redefined-builtin)
 Level-2/task_two.py:87:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 ************* Module task_three
+Level-3/task_three.py:134:0: C0301: Line too long (108/100) (line-too-long)
 Level-3/task_three.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-Level-3/task_three.py:17:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:17:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:25:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:27:23: W0621: Redefining name 'questions' from outer scope (line 41) (redefined-outer-name)
-Level-3/task_three.py:27:51: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:25:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:33:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:35:23: W0621: Redefining name 'quiz' from outer scope (line 48) (redefined-outer-name)
-Level-3/task_three.py:33:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:25:8: R1720: Unnecessary "else" after "raise", remove the "else" and de-indent the code inside it (no-else-raise)
+Level-3/task_three.py:37:37: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:49:48: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:46:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:66:48: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:63:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:78:48: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:75:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:90:48: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:87:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:99:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:106:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:99:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:110:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:112:23: W0621: Redefining name 'questions' from outer scope (line 147) (redefined-outer-name)
+Level-3/task_three.py:112:51: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:110:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:118:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:120:23: W0621: Redefining name 'quiz' from outer scope (line 154) (redefined-outer-name)
+Level-3/task_three.py:137:8: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.10/10 (previous run: 8.10/10, +0.00)
+Your code has been rated at 8.22/10 (previous run: 8.22/10, +0.00)
 
