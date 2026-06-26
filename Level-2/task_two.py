@@ -61,7 +61,7 @@ class Assessment:
 
 
 class MultipleChoiceAssessment(Assessment):
-    """Multiple Choice Assessment Class"""
+    """Multiple Choice Assessment Class - Sub-class of Assessment Class"""
 
     def __init__(self, name: str, score: float, type="multiple-choice"):
         super().__init__(name, score, type)
@@ -73,7 +73,7 @@ class MultipleChoiceAssessment(Assessment):
 
 
 class TechnicalAssessment(Assessment):
-    """Technical Assessment Class"""
+    """Technical Assessment Class - Sub-class of Assessment Class"""
 
     def __init__(self, name: str, score: float, type="technical"):
         super().__init__(name, score, type)
@@ -85,7 +85,7 @@ class TechnicalAssessment(Assessment):
 
 
 class PresentationAssessment(Assessment):
-    """Presentation Assessment Class"""
+    """Presentation Assessment Class - Sub-class of Assessment Class"""
 
     def __init__(self, name: str, score: float, type="presentation"):
         super().__init__(name, score, type)

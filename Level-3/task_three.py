@@ -61,7 +61,7 @@ class Assessment:
 
 
 class MultipleChoiceAssessment(Assessment):
-    """Multiple Choice Assessment Class"""
+    """Multiple Choice Assessment Class - Sub-class of Assessment Class"""
 
     def __init__(self, name: str, score: float, type="multiple-choice"):
         super().__init__(name, score, type)
@@ -73,7 +73,7 @@ class MultipleChoiceAssessment(Assessment):
 
 
 class TechnicalAssessment(Assessment):
-    """Technical Assessment Class"""
+    """Technical Assessment Class - Sub-class of Assessment Class"""
 
     def __init__(self, name: str, score: float, type="technical"):
         super().__init__(name, score, type)
@@ -85,7 +85,7 @@ class TechnicalAssessment(Assessment):
 
 
 class PresentationAssessment(Assessment):
-    """Presentation Assessment Class"""
+    """Presentation Assessment Class - Sub-class of Assessment Class"""
 
     def __init__(self, name: str, score: float, type="presentation"):
         super().__init__(name, score, type)
@@ -97,6 +97,7 @@ class PresentationAssessment(Assessment):
 
 
 class Question:
+    """Question Class is the individual questions and answers"""
 
     def __init__(self, question: str, chosen_answer: str, correct_answer: str):
         self.question = question
@@ -108,6 +109,7 @@ class Question:
 
 
 class Quiz:
+    """Quiz Class is the actual quiz"""
 
     def __init__(self, questions: list, name: str, type: str):
         self.questions = questions
@@ -116,6 +118,7 @@ class Quiz:
 
 
 class Marking:
+    """Marking Class helps to mark assessments"""
 
     def __init__(self, quiz: Quiz) -> None:
         self._quiz = quiz
@@ -131,7 +134,7 @@ class Marking:
         return int((score / len(self._quiz.questions)) * 100)
 
     def generate_assessment(self) -> Assessment:
-        """Returns an instance of an `Assessment` of the correct subclass with the correct name and score"""
+        """Returns an Assessment instance with the correct name and score"""
         name = self._quiz.name
         score = self.mark()
         if self._quiz.type == "multiple-choice":
